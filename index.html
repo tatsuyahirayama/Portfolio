@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="l-header fixed-nav">
+        <div class="l-header-inner">
+            <h1 class="l-product-logo">
+                <a href="/" target = "">
+                    <img src="img/Primary_logo_on_transparent_120x73.png" alt="" class="header-img">
+                </a>
+            </h1>
+            <button class="nav-toggle-button outside"  id="nav-toggle-button">
+                <img alt="ナビゲーション メニューを開く"  class="menu-bars" src="img/icons/menu.png" height="24" width="24">
+                <img alt="ナビゲーション メニューを閉じる"  class="menu-close" src="img/icons/close.png" height="24" width="24">
+            </button>
+            <nav class="l-header__nav-top">
+                <h1 class="l-product-logo">
+                    <a href="/" target = "">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+                <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Skill</a></li>
+                        <li><a href="">Works</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Twitterロゴ</a></li>
+                </ul>
+            </nav>
+            <div class="black-bg" id="js-black-bg"></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="view-first">
+                <div>
+                    <h2 id="typing"></h2>
+                    <p>PORTFOLIO</p>
+                    <a href="" class="p-btn-round">MY WORKS</a>
+                </div>
+                <img src="img/japan-1366872_1920.jpg" alt="First View">
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="main c-section">
+            <div class="main-inner">
+                <section class="logo-area">
+                    <h1 class="product-logo">
+                        <a href="/">
+
+                            <img class="logo-img" src="/img/Primary_logo_on_transparent_120x73.png" alt="">
+                        </a>
+                    </h1>
+                    <a class="p-btn-round" href="" role="button">お問い合わせ</a>
+                </section>
+                <section class="sitemap">
+                    <ul class="footer-links">
+                        <li class="p-accordion" id="footer-sitemap-about">
+                            <h4 role="button" onClick="accordionModule.toggleMenu('accordion-works')">制作事例</h4>
+                            <input type="checkbox" id="accordion-works" />
+                            <label for="accordion-works"></label>
+                            <ul class="p-accordion__items">
+                                <a href="">
+                                    <li>ポートフォリオサイト</li>
+                                </a>
+                                <a href="">
+                                    <li>オリジナルWebサービス</li>
+                                </a>
+                                <a href="">
+                                    <li>その他</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="p-accordion" id="footer-sitemap-about">
+                            <h4 role="button" onClick= "accordionModule.toggleMenu('accordion-link')">リンク集</h4>
+                            <input type="checkbox" id="accordion-link" />
+                            <label for="accordion-link"></label>
+                            <ul class="p-accordion__items">
+                                <a href="">
+                                    <li>Twitter</li>
+                                </a>
+                                <a href="">
+                                    <li>Github</li>
+                                </a>
+                                <a href="">
+                                    <li>Contact</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="foot">
+                    <ul>
+                        <a href=""><li>利用規約</li></a>
+                        <a href=""><li>プライバシーポリシー</li></a>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/footer.js"></script>
+</body>
+</html>
