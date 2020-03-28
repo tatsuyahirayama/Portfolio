@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap&subset=latin-ext" rel="stylesheet">
     <title>Portfolio</title>
 </head>
@@ -56,10 +57,10 @@
             <hr class="c-section__line"/>
             <div class="p-grid__profile">
               <div class="profile-img">
-                <img src="img/profile.PNG" alt="">
+                <img src="img/profile.PNG" alt="" class="animated slow" data-animate="flipInX">
               </div>
               <div class="profile-article">
-                <article>
+                <article class="animated" data-animate="fadeInUp">
                   <h3><略歴></h3>
                   <p></p>
                   <p>
@@ -77,7 +78,7 @@
                     HUAWEI、OPPO、その他素材加工メーカーを担当しています。
                   </p>
                 </article>
-                <article>
+                <article class="animated" data-animate="fadeInUp">
                   <h3><プログラミング></h3>
                   <p>
                     
@@ -106,7 +107,7 @@
             <h2 class="p-headline__top">Skills</h2>
             <hr class="c-section__line"/>
             <div class="p-grid__skills">
-              <article>
+              <article class="animated" data-animate="fadeInUp">
                 <h3>フロントエンド</h3>
                 <ul class="frontendList">
                   <li>
@@ -124,7 +125,7 @@
                 </ul>
 
               </article>
-              <article>
+              <article class="animated" data-animate="fadeInUp">
                 <h3>バックエンド</h3>
                 <ul class="backendList">
                   <li>
@@ -276,9 +277,11 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="javascript/carousel.js"></script>
     <script src="javascript/typing.js"></script>
     <script src="javascript/header.js"></script>
     <script src="javascript/footer.js"></script>
+    <script src="javascript/animate.js"></script>
 </body>
 </html>

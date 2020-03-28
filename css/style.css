@@ -381,7 +381,7 @@
 }
 
 .c-section__line {
-  border-bottom: 3px solid #FFB549;
+  border: 2px solid #FFB549;
   width: 4rem;
   margin: 1rem auto 3rem;
 }
