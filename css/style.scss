@@ -30,6 +30,36 @@ $font-large: 1.563rem;
 $font-xlarge: 1.963rem;
 $font-xxlarge: 3.052rem;
 
+//スペース行
+.module-spacer--small {
+  height: 20px
+}
+
+@media (min-width:600px) {
+  .module-spacer--small {
+    height: 32px
+  }
+}
+
+.module-spacer--medium {
+  height: 32px
+}
+
+@media (min-width:1024px) {
+  .module-spacer--medium {
+    height: 48px
+  }
+}
+
+.module-spacer--large {
+  height: 48px
+}
+
+@media (min-width:1024px) {
+  .module-spacer--large {
+    height: 60px
+  }
+}
 // header部分
 .l-header {
     transition: top 0.4s ease;
@@ -367,7 +397,16 @@ $font-xxlarge: 3.052rem;
     text-align: center
   }
 
-//flexレイアウト
+//headlineレイアウト
+.p-headline {
+  &__top {
+    color: $dark;
+    font-size: $font-large;
+    font-weight: bold;
+  }
+}
+
+//gridレイアウト
 .p-grid {
     display: -ms-flexbox;
     display: flex;
@@ -409,13 +448,68 @@ $font-xxlarge: 3.052rem;
           }
         }
     }
+    //profile
+    &__profile {
+      @extend .p-grid;
+      text-align: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      .profile-img{
+        width: 100%;
+        @include mq() {
+          width: 33.3333%;
+        }
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        @include mq() {
+        width: 250px;
+        height: 250px;
+        }
+      }
+
+      .profile-article{
+        width: 100%;
+        @include mq() {
+          width: 60%;
+        }
+      }
+
+      article{
+        margin-top: 40px;
+      }
+      
+      h2 {
+        font-size: $font-medium;
+        font-weight: 600;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+        &.sub {
+          font-size: $font-small;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+      }
+
+      @include mq() {
+        h2 {
+          font-size: $font-large;
+        }
+      }
+    }
 }
 
-.p-headline__top {
-    color: #001871;
-    font-size: 1.963rem;
-    font-weight: 300; }
-  
+@media screen and (max-width:576px){
+    br{
+      display: none;
+    }
+}
 
 //カルーセル
 .p-media__thumb {
@@ -533,6 +627,7 @@ $font-xxlarge: 3.052rem;
     }
 }
 
+//accordion
 .p-accordion{
     display: flex;
     -webkit-flex-direction: row;

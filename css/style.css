@@ -1,3 +1,33 @@
+.module-spacer--small {
+  height: 20px;
+}
+
+@media (min-width: 600px) {
+  .module-spacer--small {
+    height: 32px;
+  }
+}
+
+.module-spacer--medium {
+  height: 32px;
+}
+
+@media (min-width: 1024px) {
+  .module-spacer--medium {
+    height: 48px;
+  }
+}
+
+.module-spacer--large {
+  height: 48px;
+}
+
+@media (min-width: 1024px) {
+  .module-spacer--large {
+    height: 60px;
+  }
+}
+
 .l-header {
   -webkit-transition: top 0.4s ease;
   transition: top 0.4s ease;
@@ -362,7 +392,13 @@
   text-align: center;
 }
 
-.p-grid, .p-grid__list, .p-grid__list-item {
+.p-headline__top {
+  color: #001871;
+  font-size: 1.563rem;
+  font-weight: bold;
+}
+
+.p-grid, .p-grid__list, .p-grid__list-item, .p-grid__profile {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -418,10 +454,82 @@
   }
 }
 
-.p-headline__top {
-  color: #001871;
-  font-size: 1.963rem;
-  font-weight: 300;
+.p-grid__profile {
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-grid__profile .profile-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-grid__profile .profile-img {
+    width: 33.3333%;
+  }
+}
+
+.p-grid__profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-grid__profile img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.p-grid__profile .profile-article {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-grid__profile .profile-article {
+    width: 60%;
+  }
+}
+
+.p-grid__profile article {
+  margin-top: 40px;
+}
+
+.p-grid__profile h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.p-grid__profile p {
+  margin-bottom: 1rem;
+}
+
+.p-grid__profile p.sub {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-grid__profile h2 {
+    font-size: 1.563rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  br {
+    display: none;
+  }
 }
 
 .p-media__thumb {
