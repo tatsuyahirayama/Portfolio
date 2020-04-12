@@ -175,7 +175,7 @@ $font-xxlarge: 3.052rem;
             color:$main-light;
         }
     }
-    .twitter-logo{
+    .sns{
       img{
         height: 2rem;
         width: 2rem;
@@ -408,6 +408,7 @@ $font-xxlarge: 3.052rem;
     color: $dark;
     font-size: $font-large;
     font-weight: bold;
+    text-align: center;
   }
 }
 
@@ -643,6 +644,28 @@ $font-xxlarge: 3.052rem;
             padding: 0;
         }
     }
+    table{
+      margin: 0 auto;
+      tr{
+        line-height: 2.5rem;
+      }
+      th{
+        font-size: 1.2rem;
+      }
+      td{
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        img{
+          height:2.0rem;
+          width: 2.0rem;
+          vertical-align: middle;
+        }
+      }
+      }
+}
+
+#footer-bottom{
+  padding-bottom: 0;
 }
 
 

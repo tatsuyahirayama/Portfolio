@@ -158,19 +158,19 @@
   color: #777;
 }
 
-.l-header__nav-top .twitter-logo img {
+.l-header__nav-top .sns img {
   height: 2rem;
   width: 2rem;
 }
 
-.l-header__nav-top .twitter-logo span {
+.l-header__nav-top .sns span {
   display: inline-block;
   position: relative;
   bottom: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .l-header__nav-top .twitter-logo span {
+  .l-header__nav-top .sns span {
     display: none;
   }
 }
@@ -418,6 +418,7 @@
   color: #001871;
   font-size: 1.563rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .p-grid, .p-grid__list, .p-grid__list-item, .p-grid__profile {
@@ -704,6 +705,33 @@
   margin: 0 auto;
   max-width: 1440px;
   padding: 0;
+}
+
+.footer table {
+  margin: 0 auto;
+}
+
+.footer table tr {
+  line-height: 2.5rem;
+}
+
+.footer table th {
+  font-size: 1.2rem;
+}
+
+.footer table td {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.footer table td img {
+  height: 2.0rem;
+  width: 2.0rem;
+  vertical-align: middle;
+}
+
+#footer-bottom {
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 576px) {
