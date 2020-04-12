@@ -14,6 +14,11 @@ const menuModule = (() => {
             document.getElementById('js-black-bg').addEventListener('click', event => {
                 document.querySelector('html').classList.remove('nav-open')
             })
+            
+            document.getElementById('nav-close').addEventListener('click', event => {
+                document.querySelector('html').classList.remove('nav-open')
+            })
+            
         }
     }
   })();

@@ -29,12 +29,17 @@
                         <img src="img/Primary_logo_on_transparent_120x73.png" alt="">
                     </a>
                 </h1>
-                <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skill</a></li>
-                        <li><a href="">Works</a></li>
+                <ul id="nav-close">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#works">Works</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Twitterロゴ</a></li>
+                        <li>
+                          <a class="twitter-logo" href="">
+                            <img src="/img/icons/twitter_logo.png" alt="">
+                            <span>Twitter</span>
+                          </a>
+                        </li>
                 </ul>
             </nav>
             <div class="black-bg" id="js-black-bg"></div>
@@ -46,14 +51,14 @@
                 <div>
                     <h2 id="typing"></h2>
                     <p>PORTFOLIO</p>
-                    <a href="" class="p-btn-round">MY WORKS</a>
+                    <a href="#works" class="p-btn-round">MY WORKS</a>
                 </div>
                 <img src="img/japan-1366872_1920.jpg" alt="First View">
             </div>
         </section>
         <section class="c-section">
           <div class="c-section-wrapin">
-            <h2 class="p-headline__top">Plofile</h2>
+            <h2 class="p-headline__top" id="about">About</h2>
             <hr class="c-section__line"/>
             <div class="p-grid__profile">
               <div class="profile-img">
@@ -104,7 +109,7 @@
         </section>
         <section class="c-section">
           <div class="c-section-wrapin">
-            <h2 class="p-headline__top">Skills</h2>
+            <h2 class="p-headline__top" id="skill">Skills</h2>
             <hr class="c-section__line"/>
             <div class="p-grid__skills">
               <article class="animated" data-animate="fadeInUp">
@@ -145,7 +150,7 @@
 
         <section class="c-section">
             <div class="c-section-wrapin">
-              <h2 class="p-headline__top">Works</h2>
+              <h2 class="p-headline__top" id="works">Works</h2>
               <hr class="c-section__line"/>
               <div class="module-spacer--small"></div>
               <section class="p-grid__list swiper-container">
@@ -255,7 +260,7 @@
                                     <li>Twitter</li>
                                 </a>
                                 <a href="">
-                                    <li>Github</li>
+                                    <li>GitHub</li>
                                 </a>
                                 <a href="">
                                     <li>Contact</li>

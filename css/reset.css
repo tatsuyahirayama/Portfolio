@@ -30,7 +30,7 @@ time, mark, audio, video {
 }
 
 body {
-    line-height:1;
+    line-height:1.4;
 }
 
 article,aside,details,figcaption,figure,
@@ -93,4 +93,10 @@ table {
 
 input, select {
     vertical-align:middle;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

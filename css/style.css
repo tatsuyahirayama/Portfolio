@@ -54,6 +54,7 @@
 
 .l-header .l-product-logo {
   padding: 0 1rem;
+  padding-top: 0.5rem;
   display: none;
   margin: 0;
   overflow: hidden;
@@ -70,11 +71,12 @@
     float: left;
   }
   .l-header .l-product-logo a {
+    padding-top: 1rem;
     height: 64px;
     width: 128px;
   }
   .l-header .l-product-logo a img {
-    height: auto;
+    height: 64px;
     width: 128px;
   }
 }
@@ -148,11 +150,29 @@
   letter-spacing: .01562rem;
   line-height: 1.375rem;
   display: inline-block;
+  border-bottom: 2px solid transparent;
   padding: 21px 0 19px;
 }
 
 .l-header__nav-top a:hover {
   color: #777;
+}
+
+.l-header__nav-top .twitter-logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.l-header__nav-top .twitter-logo span {
+  display: inline-block;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .l-header__nav-top .twitter-logo span {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -163,29 +183,30 @@
   }
   .l-header__nav-top ul {
     background: 0 0;
-    display: block;
-    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0;
     position: relative;
     top: 1px;
   }
-  .l-header__nav-top ul::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
   .l-header__nav-top li {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 0 2rem;
+    text-align: center;
   }
   .l-header__nav-top li a {
     text-decoration: none;
+    display: block;
   }
   .l-header__nav-top li:first-child {
     margin-left: 0;
-  }
-  .l-header__nav-top .sns span {
-    display: none;
   }
 }
 
@@ -382,7 +403,7 @@
 }
 
 .c-section__line {
-  border: 2px solid black;
+  border: 2px solid #FFB549;
   width: 4rem;
   margin: 1rem auto 3rem;
 }
@@ -644,13 +665,30 @@
   color: #4c4c4c;
 }
 
+.swiper-button, .swiper-button-next, .swiper-button-prev {
+  width: 48px !important;
+  height: 48px !important;
+  background-size: 48px 48px !important;
+  margin-top: -24px !important;
+}
+
+.swiper-button-next {
+  background-image: url("/img/icons/swiper-arrow.png") !important;
+}
+
+.swiper-button-prev {
+  background-image: url("/img/icons/swiper-arrow.png") !important;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
 .footer {
   padding-bottom: 0;
   padding-top: 0;
 }
 
 .footer a:hover {
-  color: #ffb549;
+  color: #FFB549;
 }
 
 .footer ul {
