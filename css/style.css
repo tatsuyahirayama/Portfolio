@@ -257,24 +257,20 @@
 
 .nav-open .l-header__nav-top .l-product-logo {
   display: block;
-  padding: 4px 30px 0;
+  padding: 0px 30px 0;
   z-index: 1200;
-  background: #94f0f0;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
   width: 100%;
   height: 50px;
 }
 
 .nav-open .l-header__nav-top .l-product-logo a {
   border-bottom: 0;
-  height: 40px;
-}
-
-.nav-open .l-header__nav-top .l-product-logo img {
-  position: absolute;
-  top: 4px;
-  left: 1.1rem;
-  height: 40px;
-  width: auto;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0;
+  text-decoration: none;
 }
 
 .nav-open .l-header__nav-top ul {
@@ -304,6 +300,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
 .view-first div {
@@ -328,11 +325,8 @@
   font-weight: bold;
 }
 
-.view-first img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.view-first div a {
+  margin-top: 2rem;
 }
 
 .p-btn-round {
